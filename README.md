@@ -1,9 +1,9 @@
 # OpenCV Tutorial
 
-#### Installation
+### Installation
 `pip install opencv-python` 
 
-##### Verify the installation
+Verify the installation
 ~~~
 >>> import cv2
 >>> cv2.__version__
