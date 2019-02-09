@@ -10,6 +10,8 @@ Verify the installation
 ~~~
 
 ### Working with Image
+
+#### reading an image
 ~~~
 import cv2
 
@@ -19,18 +21,21 @@ import cv2
   1 - color image
   -1 - image with alpha channel
 '''
-# reading an image
 img = cv2.imread(image_src, flag) 
+~~~
 
+#### showing images
+~~~
 '''
   wait key will take number of second to show image in milli seconds
   if you give 0, then it will wait for the key
 '''
-#showing images
 cv2.imshow('window title', img)
 key = cv2.waitKey(0)
+~~~
 
-# Saving a file
+#### Saving a file
+~~~
 cv2.imwrite('name to file', img)
 cv2.destroyAllWindows()
 ~~~
