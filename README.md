@@ -69,13 +69,14 @@ while(True):
 capture.release()
 cv2.destroyAllWindows()
 ~~~
-
+[Complete Code](https://github.com/CharlesRajendran/opencv-tuts/blob/master/src/2-video-capture.py)
 #### Convert the color video to grayscale
 - instead of printing the frame, convet it to gray scale using `cvtColor` function
 ~~~
 grayscale = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 cv2.imshow('Recording', grayscale)
 ~~~
+[Complete Code](https://github.com/CharlesRajendran/opencv-tuts/blob/master/src/3--grayscale-video-capture.py)
 
 #### Write the video to a file.
 - ##### This can be done with `cv2` 's `VideoWriter` class
@@ -99,3 +100,4 @@ if ret == True:
 ~~~
 videoWriter.release()
 ~~~
+[Complete Code](https://github.com/CharlesRajendran/opencv-tuts/blob/master/src/4-video-write.py)
